@@ -8,13 +8,17 @@
     <link rel="patas" type="cats/patas.png"  href="patas.png">
     <style>
         body {
+        font-family: poppinsregular;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
         background-image: url('cats/dogs.jpeg');
         background-attachment: fixed;
         background-position: center;
         background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
         background-blend-mode: multiply; /* Modo de mesclagem */
 
-      .h1 {
+        h1 {
         color:rgb(246, 243, 69);
       }
         .text1 {
@@ -48,27 +52,49 @@
         margin: 80px 2px;
         cursor: pointer;
         transition: 0.1s;
+      
       }
-    
+      header {
+        display:  flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+      li {
+        display: inline-block;
+        margin: 20px;
+        
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+      }
         }
       
     </style>
   </head>
   <body>
     <header>
-      <div class="h1" type="text"><h1>SEJA BEM VINDO AO PATINHAS UESC!</h1></div>
-          <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed laudantium recusandae et distinctio culpa? Natus doloremque labore aliquam, suscipit placeat voluptatem nobis repudiandae ducimus at culpa optio! Ratione, dignissimos rerum.
-      </p>
+      <h1> PATINHAS UESC</h1>
+          <div class="topico" type="text">
+            <ul>
+            <li>sobre</li>
+            <li>como ajudar</li>
+            <li>contato</li>
+          </ul></div>
     </header>
-
-    <section>
+    <main>
+      <section>
       <div class="text1" type="text"><h2>Saiba como ajudar</h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos labore dicta eius, earum maxime, harum, fuga iure laboriosam laudantium sed modi ipsum adipisci quasi saepe animi eaque tenetur impedit molestiae?</p>
       <h3> Encontre aqui o seu futuro amiguinho de 4 patas!<br> 
       </div>
      
-      <div class="buttonlink" type="buttonlink" href="pag2.html" class="buttonlink">quero adotar!</a>
+      <div class="buttonlink" type="onclick" href="pag2.html" class="">quero adotar!</a>
      </h2>
     </section>
+    </main>
+    
 </body>
